@@ -7,8 +7,10 @@ detailed explanation of the tool can be found in the bs_controls.py file.
 
 '''
 
+from importlib import reload
+
 import maya.cmds as cmds
-import bs_controls as bsCon
+from bsControls import bs_controls as bsCon
 
 reload(bsCon)
 bsUtils = bsCon.BSControlsUtils()
